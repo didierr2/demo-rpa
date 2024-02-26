@@ -1,0 +1,254 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ReadInfluencers" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_influencers" Type="OutArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>688,4495.333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ReadInfluencers_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ReadInfluencers" sap:VirtualizedContainerService.HintSize="698,4430.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="D7" Name="cell1" />
+      <Variable x:TypeArguments="x:String" Default="F7" Name="cell2" />
+      <Variable x:TypeArguments="x:String" Default="H7" Name="cell3" />
+      <Variable x:TypeArguments="s:String[]" Default="[{&quot;C&quot;,&quot;E&quot;,&quot;G&quot;}]" Name="rowInfluencers" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="636,157.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="s:String[]">[out_influencers]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="s:String[]">[{"","",""}]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="636,4185.333333333333" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="602,4075.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,3990.6666666666665" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ResizeWindow="Maximize" WorkbookPath="[XLS_FILE]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="506,3687.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Comparatif'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="291, 949, 130, 34" CvTextArea="307, 955, 96, 19" CvTextArgument="Influencers" CvType="Button" DesignTimeRectangle="291, 952, 129, 34" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Influencers' role='Onglet de la feuille' /&gt;" FuzzySelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Influencers' role='Onglet de la feuille' check:fulltext='Influencers' /&gt;" Guid="9b532ffc-11e1-454b-b70a-0b73f2ad3450" InformativeScreenshot="77b40e5e06fca81be7635ba7bc396576.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Influencers&quot;).Cell(cell1)]" DisplayName="Read Cell Value Influencer 1" GetFormattedText="False" sap:VirtualizedContainerService.HintSize="444,204.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                      <ueab:ReadCellValueX.SaveTo>
+                        <OutArgument x:TypeArguments="x:String">[out_influencers(0)]</OutArgument>
+                      </ueab:ReadCellValueX.SaveTo>
+                    </ueab:ReadCellValueX>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Michou'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="328, 591, 124, 33" CvTextArgument="Michou" CvType="Text" DesignTimeRectangle="268, 582, 248, 52" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='D7' cls='XLSpreadsheetCell' name='D7' tableCol='4' tableRow='7' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='D7' cls='XLSpreadsheetCell' name='D7' role='Élément' check:text='Michou' /&gt;" Guid="c291b072-2d2b-4b26-8097-ed9a9b929564" InformativeScreenshot="6a915d3edc7fb8b125bd1715afe8a23b.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Comparatif'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="419, 949, 130, 36" CvTextArea="433, 955, 102, 24" CvTextArgument="Comparatif" CvType="Button" DesignTimeRectangle="420, 952, 130, 34" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Comparatif' role='Onglet de la feuille' /&gt;" FuzzySelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Comparatif' role='Onglet de la feuille' check:fulltext='Comparatif' /&gt;" Guid="5f4347e6-e17b-4b4d-ad4f-e91dc43b10ac" InformativeScreenshot="cb25902c1de70623313fabc70697cc03.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Michou'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_8" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="292, 400, 70, 19" CvTextArgument="Michou" CvType="Text" DesignTimeRectangle="291, 397, 165, 29" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='C3' cls='XLSpreadsheetCell' name='C3' tableCol='3' tableRow='3' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='C3' cls='XLSpreadsheetCell' name='C3' role='Élément' check:text='Michou' /&gt;" Guid="4f8d32a2-3943-4c4c-bfc5-783b9760e25d" InformativeScreenshot="da9b21c3601e4a779450189ae6eb13f3.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Comparatif&quot;).Cell(rowInfluencers(0) + COL_NAME)]" DisplayName="Write Cell influencer 1" sap:VirtualizedContainerService.HintSize="444,204.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[out_influencers(0)]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Comparatif'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="291, 949, 130, 34" CvTextArea="307, 955, 96, 19" CvTextArgument="Influencers" CvType="Button" DesignTimeRectangle="291, 952, 129, 34" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Influencers' role='Onglet de la feuille' /&gt;" FuzzySelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Influencers' role='Onglet de la feuille' check:fulltext='Influencers' /&gt;" Guid="9b532ffc-11e1-454b-b70a-0b73f2ad3450" InformativeScreenshot="77b40e5e06fca81be7635ba7bc396576.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Influencers&quot;).Cell(cell2)]" DisplayName="Read Cell Value Influencer 2" GetFormattedText="False" sap:VirtualizedContainerService.HintSize="444,204.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                      <ueab:ReadCellValueX.SaveTo>
+                        <OutArgument x:TypeArguments="x:String">[out_influencers(1)]</OutArgument>
+                      </ueab:ReadCellValueX.SaveTo>
+                    </ueab:ReadCellValueX>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Michou'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="634, 592, 198, 31" CvTextArgument="Hasheur456" CvType="Text" DesignTimeRectangle="612, 582, 244, 52" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='F7' cls='XLSpreadsheetCell' name='F7' tableCol='6' tableRow='7' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='F7' cls='XLSpreadsheetCell' name='F7' role='Élément' check:text='Hasheur456' /&gt;" Guid="cfe903f4-86ae-4128-8ac5-2f86eef5729f" InformativeScreenshot="7b645e4aa9a1bf93ac41a1d8048dddbd.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Comparatif'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="419, 949, 130, 36" CvTextArea="433, 955, 102, 24" CvTextArgument="Comparatif" CvType="Button" DesignTimeRectangle="420, 952, 130, 34" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Comparatif' role='Onglet de la feuille' /&gt;" FuzzySelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Comparatif' role='Onglet de la feuille' check:fulltext='Comparatif' /&gt;" Guid="5f4347e6-e17b-4b4d-ad4f-e91dc43b10ac" InformativeScreenshot="cb25902c1de70623313fabc70697cc03.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Michou'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="526, 400, 79, 19" CvTextArgument="Hasheur" CvType="Text" DesignTimeRectangle="525, 397, 167, 29" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='E3' cls='XLSpreadsheetCell' name='E3' tableCol='5' tableRow='3' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='E3' cls='XLSpreadsheetCell' name='E3' role='Élément' check:text='Hasheur' /&gt;" Guid="58aa9c7e-702f-45bd-9ef5-9eae7acf6d68" InformativeScreenshot="f4d8f4b4b8aabf9dc9823ed3d73a1e37.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Comparatif&quot;).Cell(rowInfluencers(1) + COL_NAME)]" DisplayName="Write Cell influencer 2" sap:VirtualizedContainerService.HintSize="444,204.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[out_influencers(1)]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Comparatif'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="291, 949, 130, 34" CvTextArea="307, 955, 96, 19" CvTextArgument="Influencers" CvType="Button" DesignTimeRectangle="291, 952, 129, 34" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Influencers' role='Onglet de la feuille' /&gt;" FuzzySelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Influencers' role='Onglet de la feuille' check:fulltext='Influencers' /&gt;" Guid="9b532ffc-11e1-454b-b70a-0b73f2ad3450" InformativeScreenshot="77b40e5e06fca81be7635ba7bc396576.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Influencers&quot;).Cell(cell3)]" DisplayName="Read Cell Value Influencer 3" GetFormattedText="False" sap:VirtualizedContainerService.HintSize="444,204.66666666666666" sap2010:WorkflowViewState.IdRef="ReadCellValueX_3">
+                      <ueab:ReadCellValueX.SaveTo>
+                        <OutArgument x:TypeArguments="x:String">[out_influencers(2)]</OutArgument>
+                      </ueab:ReadCellValueX.SaveTo>
+                    </ueab:ReadCellValueX>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Michou'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="1011, 592, 148, 37" CvTextArgument="Squeezie" CvType="Text" DesignTimeRectangle="952, 582, 269, 52" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='H7' cls='XLSpreadsheetCell' name='H7' tableCol='8' tableRow='7' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='H7' cls='XLSpreadsheetCell' name='H7' role='Élément' check:text='Squeezie' /&gt;" Guid="dd310045-e9f8-4978-885d-2d9e725ea6b3" InformativeScreenshot="027a129402de7b7494e0c906d820cafb.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Comparatif'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvElementArea="419, 949, 130, 36" CvTextArea="433, 955, 102, 24" CvTextArgument="Comparatif" CvType="Button" DesignTimeRectangle="420, 952, 130, 34" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Comparatif' role='Onglet de la feuille' /&gt;" FuzzySelectorArgument="&lt;uia automationid='comparatif.xlsx' cls='ExcelBookTabControl' name='comparatif' /&gt;&lt;uia automationid='SheetTab' name='Comparatif' role='Onglet de la feuille' check:fulltext='Comparatif' /&gt;" Guid="5f4347e6-e17b-4b4d-ad4f-e91dc43b10ac" InformativeScreenshot="cb25902c1de70623313fabc70697cc03.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Michou'" sap:VirtualizedContainerService.HintSize="444,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InScope="[Excel]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable CvTextArea="760, 402, 85, 22" CvTextArgument="Squeezie" CvType="Text" DesignTimeRectangle="761, 397, 151, 29" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='G3' cls='XLSpreadsheetCell' name='G3' tableCol='7' tableRow='3' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Grid' cls='XLSpreadsheetGrid' name='Quadrillage' /&gt;&lt;uia automationid='G3' cls='XLSpreadsheetCell' name='G3' role='Élément' check:text='Squeezie' /&gt;" Guid="3970e3e8-02d6-4782-bc41-82d9a3f02f32" InformativeScreenshot="0ac6c715e475588988dc630454fcdc66.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Comparatif&quot;).Cell(rowInfluencers(2) + COL_NAME)]" DisplayName="Write Cell influencer 3" sap:VirtualizedContainerService.HintSize="444,187.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[out_influencers(2)]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

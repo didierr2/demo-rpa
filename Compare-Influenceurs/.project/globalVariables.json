@@ -1,0 +1,58 @@
+[
+  {
+    "Constant": true,
+    "Name": "COL_NAME",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"3\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "COL_TWITCH",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"4\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "COL_INSTA",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"6\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "COL_X",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"6\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "COL_YOUTUBE",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"5\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "COL_SUM",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"7\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "XLS_FILE",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"C:\\Users\\didie\\Documents\\ws\\demo-rpa\\comparatif.xlsx\"",
+    "IsLiteral": false
+  }
+]
