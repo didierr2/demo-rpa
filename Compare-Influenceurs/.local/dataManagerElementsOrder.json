@@ -26,30 +26,15 @@
         "i&Sequence_1",
         "nbFollowers&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20"
-      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20",
-        "XLS_FILE&Sequence_18",
-        "COL_NAME&Sequence_18",
-        "COL_TWITCH&Sequence_18",
-        "COL_INSTA&Sequence_18",
-        "COL_X&Sequence_18",
-        "COL_YOUTUBE&Sequence_18",
-        "COL_SUM&Sequence_18"
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24"
       ],
       "AddedNamespaces": null
     },
@@ -62,24 +47,15 @@
         "cell3&Sequence_1",
         "rowInfluencers&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [
-        "out_influencers"
-      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20",
-        "XLS_FILE&Sequence_18",
-        "COL_NAME&Sequence_18",
-        "COL_TWITCH&Sequence_18",
-        "COL_INSTA&Sequence_18",
-        "COL_X&Sequence_18",
-        "COL_YOUTUBE&Sequence_18",
-        "COL_SUM&Sequence_18"
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24"
       ],
       "AddedNamespaces": null
     },
@@ -89,30 +65,15 @@
       "VariablesSectionElementsOrder": [
         "rowInfluencers&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20"
-      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20",
-        "XLS_FILE&Sequence_18",
-        "COL_NAME&Sequence_18",
-        "COL_TWITCH&Sequence_18",
-        "COL_INSTA&Sequence_18",
-        "COL_X&Sequence_18",
-        "COL_YOUTUBE&Sequence_18",
-        "COL_SUM&Sequence_18"
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24"
       ],
       "AddedNamespaces": null
     },
@@ -158,29 +119,18 @@
         "multiplicator&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20"
+        "in_influencerName",
+        "out_nbFollowers",
+        "in_browser"
       ],
       "ConstantsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20",
-        "XLS_FILE&Sequence_18",
-        "COL_NAME&Sequence_18",
-        "COL_TWITCH&Sequence_18",
-        "COL_INSTA&Sequence_18",
-        "COL_X&Sequence_18",
-        "COL_YOUTUBE&Sequence_18",
-        "COL_SUM&Sequence_18"
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24"
       ],
       "AddedNamespaces": null
     },
@@ -221,10 +171,22 @@
         "multiplicator&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_influencerName",
-        "out_nbFollowers"
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24"
       ],
       "ConstantsSectionElementsOrder": [
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24",
         "COL_NAME&Sequence_20",
         "COL_TWITCH&Sequence_20",
         "COL_INSTA&Sequence_20",
@@ -246,29 +208,36 @@
         "multiplicator&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20"
+        "in_influencerName",
+        "out_nbFollowers",
+        "in_browser"
       ],
       "ConstantsSectionElementsOrder": [
-        "COL_NAME&Sequence_20",
-        "COL_TWITCH&Sequence_20",
-        "COL_INSTA&Sequence_20",
-        "COL_X&Sequence_20",
-        "COL_YOUTUBE&Sequence_20",
-        "COL_SUM&Sequence_20",
-        "XLS_FILE&Sequence_20",
-        "XLS_FILE&Sequence_18",
-        "COL_NAME&Sequence_18",
-        "COL_TWITCH&Sequence_18",
-        "COL_INSTA&Sequence_18",
-        "COL_X&Sequence_18",
-        "COL_YOUTUBE&Sequence_18",
-        "COL_SUM&Sequence_18"
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24"
+      ],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "browserUi&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "COL_NAME&Sequence_24",
+        "COL_TWITCH&Sequence_24",
+        "COL_INSTA&Sequence_24",
+        "COL_X&Sequence_24",
+        "COL_YOUTUBE&Sequence_24",
+        "COL_SUM&Sequence_24",
+        "XLS_FILE&Sequence_24"
       ],
       "AddedNamespaces": null
     }
