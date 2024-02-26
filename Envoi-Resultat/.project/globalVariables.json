@@ -1,0 +1,18 @@
+[
+  {
+    "Constant": true,
+    "Name": "XLS_FILE",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"C:\\Users\\didie\\Documents\\ws\\demo-rpa\\comparatif.xlsx\"",
+    "IsLiteral": false
+  },
+  {
+    "Constant": true,
+    "Name": "COL_SUM",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": "\"7\"",
+    "IsLiteral": false
+  }
+]

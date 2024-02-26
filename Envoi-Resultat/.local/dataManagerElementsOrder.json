@@ -1,0 +1,52 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [
+        "XLS_FILE&",
+        "COL_SUM&"
+      ],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "message&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "XLS_FILE&Sequence_4",
+        "COL_SUM&Sequence_4"
+      ],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WriteSynthese.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "cell1&Sequence_1",
+        "cell2&Sequence_1",
+        "cell3&Sequence_1",
+        "rowInfluencers&Sequence_1",
+        "influencerSum&Sequence_1",
+        "influencerNames&Sequence_1",
+        "imax&Sequence_1",
+        "message3&Sequence_2",
+        "message2&Sequence_2",
+        "message1&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_message"
+      ],
+      "ConstantsSectionElementsOrder": [
+        "COL_SUM&Sequence_4",
+        "XLS_FILE&Sequence_4"
+      ],
+      "AddedNamespaces": null
+    }
+  ]
+}
