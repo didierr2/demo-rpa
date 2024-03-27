@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>606,2750.6666666666665</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>780.8,2876</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>twitch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,7 +117,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="youtube" sap:VirtualizedContainerService.HintSize="616,2686" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="youtube" sap:VirtualizedContainerService.HintSize="616,2811.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url" />
       <Variable x:TypeArguments="x:String" Name="nbFollowers" />
@@ -129,7 +129,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="554,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="553.6,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -151,7 +151,19 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge" sap:VirtualizedContainerService.HintSize="554,1519.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_browser]" OpenMode="Never" ScopeGuid="30a1446b-d610-494a-afb4-3f9030b531a1" Version="V2" WindowResize="Maximize">
+    <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate browser edge" sap:VirtualizedContainerService.HintSize="553.6,126.4" sap2010:WorkflowViewState.IdRef="Activate_1">
+      <ui:Activate.Target>
+        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[in_browser]" Id="ab2872ce-fd75-49b1-81b2-2e0ac82fdd4a">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Activate.Target>
+    </ui:Activate>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge" sap:VirtualizedContainerService.HintSize="553.6,1516.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_browser]" OpenMode="Never" ScopeGuid="30a1446b-d610-494a-afb4-3f9030b531a1" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

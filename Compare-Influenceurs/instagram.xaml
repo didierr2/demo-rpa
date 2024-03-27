@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>606,3086</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>780.8,3196</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>twitch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,7 +117,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="instagram" sap:VirtualizedContainerService.HintSize="616,3021.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="instagram" sap:VirtualizedContainerService.HintSize="616,3131.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url" />
       <Variable x:TypeArguments="x:String" Name="nbFollowers" />
@@ -129,7 +129,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="554,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="553.6,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -151,13 +151,25 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge" sap:VirtualizedContainerService.HintSize="554,1854.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_browser]" OpenMode="Never" ScopeGuid="30a1446b-d610-494a-afb4-3f9030b531a1" Version="V2" WindowResize="Maximize">
+    <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" sap:VirtualizedContainerService.HintSize="553.6,126.4" sap2010:WorkflowViewState.IdRef="Activate_1">
+      <ui:Activate.Target>
+        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[in_browser]" Id="6cb70f69-8d6e-4f67-be3f-9dd088320ae1">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Activate.Target>
+    </ui:Activate>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge" sap:VirtualizedContainerService.HintSize="553.6,1836.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_browser]" OpenMode="Never" ScopeGuid="30a1446b-d610-494a-afb4-3f9030b531a1" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="520,1675.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="520,1660" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:Rectangle" Name="pos" />
             </Sequence.Variables>
@@ -166,28 +178,28 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="458,1588" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="00:00:01">
+            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="457.6,1572" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="00:00:01">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
-                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,1384" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,1371.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="354,124.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Timeout="10" Url="[url]" Version="V3" />
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Recherche'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Timeout="5" Version="V3">
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="353.6,122.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Timeout="10" Url="https://www.instagram.com/" Version="V3" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Recherche'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Timeout="5" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" CvElementArea="47, 490, 47, 46" CvType="Icon" DesignTimeRectangle="53, 497, 36, 36" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl aria-label='Recherche' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Recherche' tag='svg' type='' class='x1lliihq x1n2onr6 x5n08af' aaname='' check:text='Recherche' /&gt;" Guid="36526607-8c47-45a0-8d3c-c7d8e4a7d584" InformativeScreenshot="b779a38505af2b867c23cbaf2648569c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" WaitForReadyArgument="Complete" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBetweenKeys="0.3" DisplayName="Type Into 'INPUT tw-b074f41699e1fc…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Text="[in_influencerName]" Timeout="10" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBetweenKeys="0.3" DisplayName="Type Into 'INPUT tw-b074f41699e1fc…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Text="[in_influencerName]" Timeout="10" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="151, 388, 546, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='x1lugfcp x19g9edo x1lq5wgf xgqcy7u x30kzoy x9jhf4c x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x5n08af xl565be x5yr21d x1a2a7pz xyqdw3p x1pi30zi xg8j3zb x1swvt13 x1yc453h xh8yej3 xhtitgo xs3hnx8 x1dbmdqj xoy4bel x7xwk5j focus-visible' placeholder='Rechercher' aaname='' /&gt;" Guid="68f676dd-3486-4b3f-96d9-ef9ecb886672" InformativeScreenshot="e4d6ff0224f1014e6aff5a6ff3e5eb8b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <Delay Duration="00:00:01.2000000" sap:VirtualizedContainerService.HintSize="354,132" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Timeout="5" Version="V3">
+                    <Delay Duration="00:00:01.2000000" sap:VirtualizedContainerService.HintSize="353.6,130.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Timeout="5" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" CvElementArea="537, 450, 25, 25" CvType="Icon" DesignTimeRectangle="323, 549, 18, 18" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;html app='msedge.exe' title='*Instagram*' /&gt;&lt;webctrl aria-label='Vérifié' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Vérifié' tag='svg' /&gt;" Guid="6bbff7da-d7d1-45e6-8f38-ba9853f383fe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGlSURBVEhL3ZTLK0RRHMdHyULZURaSkGwUxcbGf+CxJFZSsvIf2Fl61SQKGY9IDGVmPCaPsqGUx2Y2GKysRLrvOz+/3zX33Ln3nHunFMW3vnXvOb/z6Xd+53dOCH5I/xDcGVdh8loHMwOWJ/C7K6FmZ/0VCN55MCAUliy3bCjQuK6w/1jayEaJxYHDtzq0RRXLpXMyA3ldNi+zuNFLPbvaEQcePtOEoCD3HvKl+R1w4tGA+lX/7fu5clGG7Xt3zRmYTl+0SOQCNNXWO94eczJn4LErnQsUuXBagihmp5kAFZhp7tw4MmwxMAVWL7kDS2YlaMppsSKExrFc1M99SfcOa5dli2GLgVUBOJIy4A1317qpQPGMBMlnE5AJ/Ud82WitEEzb8AZTr6ZeM/ChAZy/fK0aOPbvGrqVtvIeXvmCDOl3yhNg6DS4FTuQYYuBSftPJtSt8O1G9Rs88YdWRWTY9VxxF5j0t24eaQ/baeRCs1yDJRCByFQeO27rjn/pOHCu6IrboGZ8NhvWnJ6mBIIUCCZ1H6gwdeM89PTo9+BYPuUFf08An/2nYIGiCc1LAAAAAElFTkSuQmCC" InformativeScreenshot="1177b2932e3896f8bcce44502a6acc94.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Visible" WaitForReadyArgument="Complete">
                           <uix:TargetAnchorable.Anchors>
@@ -198,12 +210,12 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Recherche'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Timeout="5" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Recherche'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Timeout="5" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" CvElementArea="47, 490, 47, 46" CvType="Icon" DesignTimeRectangle="53, 497, 36, 36" DesignTimeScaleFactor="1.5" ElementType="Icon" FullSelectorArgument="&lt;webctrl aria-label='Recherche' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Recherche' tag='svg' type='' class='x1lliihq x1n2onr6 x5n08af' aaname='' check:text='Recherche' /&gt;" Guid="36526607-8c47-45a0-8d3c-c7d8e4a7d584" InformativeScreenshot="b779a38505af2b867c23cbaf2648569c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '78,1 k followers'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" TextString="[nbFollowers]" Timeout="5" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '78,1 k followers'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" TextString="[nbFollowers]" Timeout="5" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.instagram.com/michou/" CvTextArea="997, 387, 167, 25" CvType="AnyWordGroup" DesignTimeRectangle="1000, 381, 164, 32" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='* followers' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _alvs _a6hd' /&gt;" Guid="c46179ab-9d22-40f4-8237-29112eaaaad3" ImageBase64="" InformativeScreenshot="922060ee036cb7a30404ff74287f7971.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Photos et vidéos Instagram' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>

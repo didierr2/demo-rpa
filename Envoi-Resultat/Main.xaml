@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="594,3065.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="780.8,3333.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -113,7 +113,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,3000.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,3268.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="message" />
     </Sequence.Variables>
@@ -122,42 +122,66 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Recuperation des resultats...&quot;]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteSynthese - Invoke Workflow File (WriteSynthese.xaml)" sap:VirtualizedContainerService.HintSize="450,155.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="WriteSynthese.xaml">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Recuperation des resultats...&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WriteSynthese - Invoke Workflow File (WriteSynthese.xaml)" sap:VirtualizedContainerService.HintSize="449.6,153.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="WriteSynthese.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="out_message">[message]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Prise de la capture d'écran...&quot;]" />
-    <uix:NTakeScreenshot ContinueOnError="True" DisplayName="Take Screenshot 'graphique: histogramme'" FileName="screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="450,175.33333333333334" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_6" SaveScreenshotTo="Clipboard" Timeout="10" Version="V3">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Prise de la capture d'écran...&quot;]" />
+    <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate 'Barre de'" sap:VirtualizedContainerService.HintSize="449.6,147.2" sap2010:WorkflowViewState.IdRef="Activate_1">
+      <ui:Activate.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e030c975-d47e-4f8e-b308-c530029edd5e" InformativeScreenshot="4857dabbc627d2020fea8688a58bda91" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif.xlsx - Excel' /&gt;&lt;uia cls='MsoCommandBar' helpText='Barre d&amp;apos;outils Ribbon' /&gt;&lt;uia cls='NetUIOfficeCaption' name='‪comparatif.xlsx‬  -  Excel' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Activate.Target>
+    </ui:Activate>
+    <uix:NTakeScreenshot ContinueOnError="True" DisplayName="Take Screenshot 'graphique: histogramme'" FileName="screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="449.6,172.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_6" SaveScreenshotTo="Clipboard" Timeout="10" Version="V3">
       <uix:NTakeScreenshot.Target>
-        <uix:TargetAnchorable DesignTimeRectangle="1002, 367, 845, 559" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;uia name='Zone de graphique' role='Élément de graphique' /&gt;&lt;uia role='graphique: histogramme empilé' /&gt;" FuzzySelectorArgument="&lt;uia name='Zone de graphique' role='Élément de graphique' /&gt;&lt;uia role='graphique: histogramme empilé' automationid='' /&gt;" Guid="17317d02-0f33-4dc7-a40b-b53df91102d5" ImageBase64="" InformativeScreenshot="b8b3eefb7589766836a60779300fc212.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+        <uix:TargetAnchorable DesignTimeRectangle="944, 314, 844, 535" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;uia name='Zone de graphique' role='Élément de graphique' /&gt;&lt;uia role='graphique: histogramme empilé' /&gt;" FuzzySelectorArgument="&lt;uia name='Zone de graphique' role='Élément de graphique' /&gt;&lt;uia role='graphique: histogramme empilé' automationid='' /&gt;" Guid="30090cd8-1afa-496d-b2f4-3205c74756f9" ImageBase64="" InformativeScreenshot="3d1673fb8099170f85d4f350ccd1f97e.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='comparatif.xlsx - Excel' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
       </uix:NTakeScreenshot.Target>
     </uix:NTakeScreenshot>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Rédaction du mail&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Nouvel onglet" sap:VirtualizedContainerService.HintSize="450,2028" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f608a76e-f264-4c65-b202-8a53e12f1f9e" Version="V2" WindowResize="Maximize">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Rédaction du mail&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Nouvel onglet" sap:VirtualizedContainerService.HintSize="449.6,2159.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f608a76e-f264-4c65-b202-8a53e12f1f9e" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="416,1786" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="416,1919.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Nouveau message'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Version="V3">
+            <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate 'pane'" sap:VirtualizedContainerService.HintSize="353.6,147.2" sap2010:WorkflowViewState.IdRef="Activate_2">
+              <ui:Activate.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3e209a17-97cd-4aef-9c1a-e001213471af" InformativeScreenshot="da6fad36cf82635b7651b0b80c1042d6" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*didierr2@gmail.com - Gmail*' /&gt;&lt;ctrl name='*didierr2@gmail.com - Gmail*' role='pane' /&gt;&lt;ctrl idx='2' name='Barre d’onglets' role='page tab list' /&gt;&lt;ctrl idx='3' role='pane' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Activate.Target>
+            </ui:Activate>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Nouveau message'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/?hl=fr#label/Forum-Metiers" CvElementArea="133, 348, 305, 84" CvTextArea="213, 379, 184, 24" CvTextArgument="Nouveau message" CvType="Button" DesignTimeRectangle="137, 354, 295, 72" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Nouveau message' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Nouveau message' aria-role='button' tag='DIV' type='' class='T-I T-I-KE L3' check:innerText='Nouveau message' /&gt;" Guid="d9e4c878-5ec6-4231-b525-e04a6c4308d0" InformativeScreenshot="1d9e29ea46fb948e07266b3a508fa108.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='&amp;quot;Forum-Metiers&amp;quot; - didierr2@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/?hl=fr#label/Forum-Metiers" CvElementArea="133, 348, 305, 84" CvTextArea="213, 379, 184, 24" CvTextArgument="Nouveau message" CvType="Button" DesignTimeRectangle="137, 354, 295, 72" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Nouveau message' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Nouveau message' aria-role='button' tag='DIV' type='' class='T-I T-I-KE L3' check:innerText='Nouveau message' /&gt;" Guid="d9e4c878-5ec6-4231-b525-e04a6c4308d0" InformativeScreenshot="1d9e29ea46fb948e07266b3a508fa108.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*didierr2@gmail.com - Gmail*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT :1gm'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Text="didierr2@gmail.com" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT :1gm'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Text="didierr2@gmail.com" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/?hl=fr#label/Forum-Metiers?compose=new" DesignTimeRectangle="293, 369, 1252, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='GS' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='GS' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='agP aFx' aaname='' /&gt;" Guid="1d6259c5-22a4-4060-a2cf-108cc853fb10" InformativeScreenshot="d936e3744dd41cca9104f7754962a8f0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='&amp;quot;Forum-Metiers&amp;quot; - didierr2@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Cci'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Text="Comparatif des influenceurs" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Cci'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Text="Comparatif des influenceurs" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/?hl=fr#label/Forum-Metiers?compose=new" CvTextArea="264, 435, 55, 25" CvTextArgument="Objet" CvType="Text" DesignTimeRectangle="266, 432, 1350, 30" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl aria-label='Objet' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aria-label='Objet' type='' tag='INPUT' class='aoT' placeholder='Objet' aaname='' /&gt;" Guid="5d385f33-be14-4949-804f-d604a184fcd4" InformativeScreenshot="0fc6f45d3058090cdf7f41fae665fbc7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='&amp;quot;Forum-Metiers&amp;quot; - didierr2@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -168,7 +192,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="0.4" DisplayName="Type Into 'DIV :1do'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Text="[message]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="0.4" DisplayName="Type Into 'DIV :1do'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f608a76e-f264-4c65-b202-8a53e12f1f9e" Text="[message]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://mail.google.com/mail/u/0/?hl=fr#label/Forum-Metiers?compose=new" DesignTimeRectangle="266, 489, 1350, 303" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='undefined' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aria-role='textbox' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='undefined' tag='TABLE' /&gt;&lt;webctrl aria-role='textbox' type='' tag='DIV' class='Am aiL Al editable LW-avf tS-tW' aaname='' /&gt;" Guid="e4b9d45c-6ee0-41cf-a5ee-4f665f9f12e2" InformativeScreenshot="62bdd24cc8fb9c9c3eee40e4cecf1d88.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='&amp;quot;Forum-Metiers&amp;quot; - didierr2@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>

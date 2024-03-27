@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>606,2566</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>605.6,2684</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>twitch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,7 +117,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="twitch" sap:VirtualizedContainerService.HintSize="616,2501.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="twitch" sap:VirtualizedContainerService.HintSize="616,2619.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url" />
       <Variable x:TypeArguments="x:String" Name="nbFollowers" />
@@ -129,7 +129,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="554,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="553.6,188" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -151,29 +151,41 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge" sap:VirtualizedContainerService.HintSize="554,1519.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_browser]" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="30a1446b-d610-494a-afb4-3f9030b531a1" Version="V2" WindowResize="Maximize">
+    <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate browser edge" sap:VirtualizedContainerService.HintSize="553.6,126.4" sap2010:WorkflowViewState.IdRef="Activate_1">
+      <ui:Activate.Target>
+        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[in_browser]" Id="ab2872ce-fd75-49b1-81b2-2e0ac82fdd4a">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Activate.Target>
+    </ui:Activate>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge" sap:VirtualizedContainerService.HintSize="553.6,1509.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_browser]" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="30a1446b-d610-494a-afb4-3f9030b531a1" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="520,1340" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="520,1332.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="458,1252.6666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="00:00:01">
+            <ui:RetryScope ContinueOnError="True" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="457.6,1244.8" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="00:00:01">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
-                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,1048.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,1044" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="354,124.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Timeout="10" Url="[url]" Version="V3" />
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBetweenKeys="0.2" DisplayName="Type Into 'INPUT tw-b074f41699e1fc…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Text="[in_influencerName]" Version="V3">
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="353.6,122.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Timeout="10" Url="[url]" Version="V3" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBetweenKeys="0.2" DisplayName="Type Into 'INPUT tw-b074f41699e1fc…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="30a1446b-d610-494a-afb4-3f9030b531a1" Text="[in_influencerName]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.twitch.tv/" CvElementArea="596, 256, 536, 58" CvType="InputBox" DesignTimeRectangle="598, 178, 534, 54" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='ScInputBase-sc-vu7u7d-0 ScInput-sc-19xfhag-0 gWqzmh eZLFtM InjectLayout-sc-1i43xsx-0 djxcsO tw-input tw-input--large' placeholder='Rechercher' aaname='' /&gt;" Guid="987a655f-23e9-4e34-8433-3b51aee9eba1" ImageBase64="" InformativeScreenshot="69ccbb77ad79afe8a4b5ac11efb6d294.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Twitch' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" WaitForReadyArgument="Complete" />
                       </uix:NTypeInto.Target>
